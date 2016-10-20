@@ -1,0 +1,278 @@
+.heart {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	-webkit-transform: rotate(45deg);  /* для Chrome и Safari */
+	-moz-transform: rotate(45deg); /* для Firefox */ 
+	-o-transform: rotate(45deg); /* для Opera */ 
+	transform: rotate(45deg);
+	border: solid 1px red;
+	border-top: none;
+	border-left: none;
+	top:50%;
+	left:43%;
+	background: red;
+		/* для браузеров, которые не поддерживают градиент */
+	background: -webkit-radial-gradient(115% 50%, 75px 110px, #8B0000, #8B0000, red);
+		/* для Chrome и Safari */
+	background: -moz-radial-gradient(170% 50%, circle , #8B0000 0%, #8B0000 52%,  red 76%);
+		/* для Firefox */
+	background: -o-radial-gradient(115% 50%, 75px 110px, #8B0000, #8B0000, red);
+		/* для Opera */
+	background: radial-gradient(115% 50%, 75px 110px, #8B0000, #8B0000, red);
+		/* по стандартам CSS3 */
+	
+	
+}
+
+.heart:before, .heart:after {
+	position:absolute;
+	content: ' ';
+	-webkit-border-radius: 50px 0 0 50px;
+	-moz-border-radius: 50px 0 0 50px;
+	border-radius: 50px 0 0 50px;
+	width: 70px;
+	height: 100px;
+	border: solid 1px red;
+	border-right: none;
+	left:-70px;
+}
+.heart:after {
+	position: absolute;
+	left: 15px;
+	top: -85px;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+}
+
+.heart:before {
+	background: red;
+	background: -webkit-radial-gradient(15% 50%, 65px 65px, #FFE4E1, red);
+	background: -moz-radial-gradient(15% 50%, circle, #FFE4E1, red 85%);
+	background: -o-radial-gradient(15% 50%, 65% 65%, #FFE4E1, red);
+	background: radial-gradient(15% 50%, 65% 65%, #FFE4E1, red);
+}
+
+.heart:after {
+	background: red;
+	background: -webkit-radial-gradient(50% 80%, 85px 80px, #FFB6C1, red, #8B0000);
+	background: -moz-radial-gradient(50% 80%, circle, #FFB6C1, red, #8B0000 90%);
+	background: -o-radial-gradient(50% 80%, 85px 80px, #FFB6C1, red, #8B0000);
+	background: radial-gradient(50% 80%, 85px 80px, #FFB6C1, red, #8B0000);
+}
+
+
+@keyframes 'anime' {
+	from {
+		transform: scale(1) rotate(45deg);
+	}
+	to {
+		transform: scale(1.1) rotate(45deg);
+	}
+}
+
+.heart {
+	-webkit-animation-name: 'anime';
+	-webkit-animation-duration: 300ms;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in;
+}
+@-webkit-keyframes 'anime' {
+	from {
+		-webkit-transform: scale(1) rotate(45deg);
+	}
+	to {
+		-webkit-transform: scale(1.1) rotate(45deg);
+	}
+}
+
+.heart {
+	-moz-animation-name: 'anime';
+	-moz-animation-duration: 300ms;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-direction: alternate;
+	-moz-animation-timing-function: ease-in;
+}
+@-moz-keyframes 'anime' {
+	from {
+		-moz-transform: scale(1) rotate(45deg);
+	}
+	to {
+		-moz-transform: scale(1.1) rotate(45deg);
+	}
+}
+
+
+
+
+.heart {
+	animation-name: 'anime';
+		/* имя кейфрейма для анимации */
+	animation-duration: 300ms;
+		/* длительность анимации */
+	animation-iteration-count: infinite;
+		/* количество повторений, в данном случае - бесконечно */
+	animation-direction: alternate;
+		/* проигрывать анимацию в прямом и в обратном порядке */
+	animation-timing-function: ease-in;
+		/* вычисление временных промежутков для анимации, в данном случае анимация ускоряется */
+}
+
+
+
+
+
+.heart2 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	-webkit-transform: rotate(45deg);  /* для Chrome и Safari */
+	-moz-transform: rotate(45deg); /* для Firefox */ 
+	-o-transform: rotate(45deg); /* для Opera */ 
+	transform: rotate(45deg);
+	border: solid 1px red;
+	border-top: none;
+	border-left: none;
+	top:50%;
+	left:48%;
+	background: red;
+		/* для браузеров, которые не поддерживают градиент */
+	background: -webkit-radial-gradient(115% 50%, 75px 110px, #8B0000, #8B0000, red);
+		/* для Chrome и Safari */
+	background: -moz-radial-gradient(170% 50%, circle , #8B0000 0%, #8B0000 52%,  red 76%);
+		/* для Firefox */
+	background: -o-radial-gradient(115% 50%, 75px 110px, #8B0000, #8B0000, red);
+		/* для Opera */
+	background: radial-gradient(115% 50%, 75px 110px, #8B0000, #8B0000, red);
+		/* по стандартам CSS3 */
+	
+	
+}
+
+.heart2:before, .heart2:after {
+	position:absolute;
+	content: ' ';
+	-webkit-border-radius: 50px 0 0 50px;
+	-moz-border-radius: 50px 0 0 50px;
+	border-radius: 50px 0 0 50px;
+	width: 70px;
+	height: 100px;
+	border: solid 1px red;
+	border-right: none;
+	left:-70px;
+}
+.heart2:after {
+	position: absolute;
+	left: 15px;
+	top: -85px;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+}
+
+.heart2:before {
+	background: red;
+	background: -webkit-radial-gradient(15% 50%, 65px 65px, #FFE4E1, red);
+	background: -moz-radial-gradient(15% 50%, circle, #FFE4E1, red 85%);
+	background: -o-radial-gradient(15% 50%, 65% 65%, #FFE4E1, red);
+	background: radial-gradient(15% 50%, 65% 65%, #FFE4E1, red);
+}
+
+.heart2:after {
+	background: red;
+	background: -webkit-radial-gradient(50% 80%, 85px 80px, #FFB6C1, red, #8B0000);
+	background: -moz-radial-gradient(50% 80%, circle, #FFB6C1, red, #8B0000 90%);
+	background: -o-radial-gradient(50% 80%, 85px 80px, #FFB6C1, red, #8B0000);
+	background: radial-gradient(50% 80%, 85px 80px, #FFB6C1, red, #8B0000);
+}
+
+
+@keyframes 'anime2' {
+	from {
+		transform: scale(1) rotate(45deg);
+	}
+	to {
+		transform: scale(1.1) rotate(45deg);
+	}
+}
+
+.heart2 {
+	-webkit-animation-name: 'anime2';
+	-webkit-animation-duration: 300ms;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in;
+}
+@-webkit-keyframes 'anime2' {
+	from {
+		-webkit-transform: scale(1) rotate(45deg);
+	}
+	to {
+		-webkit-transform: scale(1.1) rotate(45deg);
+	}
+}
+
+
+.heart2 {
+	animation-name: 'anime2';
+		/* имя кейфрейма для анимации */
+	animation-duration: 300ms;
+		/* длительность анимации */
+	animation-iteration-count: infinite;
+		/* количество повторений, в данном случае - бесконечно */
+	animation-direction: alternate;
+		/* проигрывать анимацию в прямом и в обратном порядке */
+	animation-timing-function: ease-in;
+		/* вычисление временных промежутков для анимации, в данном случае анимация ускоряется */
+}
+
+
+
+.nad {
+  position: absolute;
+  padding: 40px;
+  font-size: 75px;
+  font-family: 'Monoton', cursive;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+  color: red;
+  top:2%;
+  left:35%;
+}
+div p { margin:0; }
+#error:hover { text-shadow: 0 0 200px #ffffff,0 0 80px #008000,0 0 6px #0000ff; }
+#code:hover { text-shadow: 0 0 100px red,0 0 40px FireBrick,0 0 8px DarkRed; }
+#error {
+  color: #fff;
+  text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+}
+#error span {
+  animation: upper 11s linear infinite;
+}
+#code span:nth-of-type(2) {
+  animation: lower 10s linear infinite;
+}
+#code span:nth-of-type(1) {
+  text-shadow: none;
+  opacity:.4;
+}
+@keyframes upper {
+  0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+    opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+  }
+  20%,21.999%,63%,63.999%,65%,69.999% {
+    opacity:0.4; text-shadow: none; 
+  }
+}
+@keyframes lower {
+  0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+    opacity:0.99; text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+  }
+  19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% { 
+    opacity:0.4; text-shadow: none; 
+  }
+}
+
